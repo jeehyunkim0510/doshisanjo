@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <main>
+        <!-- 도시산조 소개 -->
+        <div class="container-fluid text-center mt-1 mt-lg-5">
+            <img src="media/introduce.png" class="img-fluid">
+        </div>
+        <div class="container-fluid text-center pt-5">
+            <h1 class="display-1">도시산조</h1>
+            <div class="row justify-content-center text-start">
+                <div class="col-12 col-lg-7 mt-lg-5">
+                    <p class="fs-1">각박한 도시에서 스트레스 속에서 살아가는한 현대인이 몽환적인 장소들과 자신의 추억 속으로 먼 여정을 떠났다 돌아오는 이야기</p>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <!-- 제작과정 -->
+        <h1 class="display-1 text-center mt-5">제작 과정</h1>
+        <div class="container-fluid text-center mt-1 mt-lg-5 mb-5">
+            <video src="media/video.mp4" type="video/mp4" controls>
+        </div>
+        <div class="container-fluid text-center pt-5">
+            <div class="row justify-content-center text-start">
+                <div class="col-12 col-lg-7">
+                    <p class="fs-1 text-center">모션 캡처를 위해서 스튜디오를 방문해서 녹화를 진행하였습니다.</p>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </main>
+
+{% endblock %}

@@ -10,7 +10,7 @@
   <body>
     <style>
         #main_family_picture {
-            background-image: url('media/bg-masthead.jpg');
+            background-image: url('/media/bg-masthead.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -21,20 +21,11 @@
             color: white;
         }
 
-        .btn-login {
-            font-size: 24px;
-            padding: 10px 30px;
-            color: #808080; /* 파란색 */
-            border: 1px solid #808080; /* 파란색 */
-            background-color: transparent; /* 배경색 없음 */
-            margin-bottom: 40px; /* 조정 가능 */
-            margin-right: 10px; /* 회원가입과 간격 조정 */
-        }
     </style>
 
     <div id="main_family_picture">
         <div style="display: flex;">
-            <a href="http://127.0.0.1:5501/introduce.html" style="text-decoration: none;"><h1  style="color: grey;">九 雲 夢</h1></a>
+            <a href="{% url 'homeapp:introduce' %}"  style="text-decoration: none;"><h1  style="color: grey;">九 雲 夢</h1></a>
         </div>"
     </div>
 </body>

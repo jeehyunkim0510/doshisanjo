@@ -2,11 +2,11 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN git clone https://github.com/jeehyunkim0510/sweethome4.git
-
-WORKDIR /home/sweethome4/
+RUN git clone https://github.com/jeehyunkim0510/doshisanjo.git
 
 RUN echo
+
+WORKDIR /home/mysite/
 
 RUN pip install -r requirements.txt
 

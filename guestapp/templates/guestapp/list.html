@@ -2,13 +2,19 @@
 {% load static %}
 
 {% block content %}
-
+<div class="container">
+    <div class="text-start mb-3">
+        <a href="{% url 'guestapp:create' %}" class="nav-link"><h3 class="text-primary">글쓰기</h3></a>
+    </div>
+</div>
     {% if guest_list %}
         {% for article in guest_list %}
-            <div class="container">
+            <div class="container align-items-center">
                     <div class="row">
                         <div class="col-md-3">
-                            <h1>{{ article.writer }}</h1>
+                            <div class="container align-items-center">
+                                <h1>{{ article.writer }}</h1>
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <p>{{ article.content }}</p>

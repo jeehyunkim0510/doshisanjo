@@ -6,7 +6,8 @@ RUN git clone https://github.com/jeehyunkim0510/doshisanjo.git
 
 RUN echo
 
-WORKDIR /home/mysite/
+
+WORKDIR /home/doshisanjo/
 
 RUN pip install -r requirements.txt
 
